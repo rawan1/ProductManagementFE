@@ -1,17 +1,14 @@
-table {
-    width: 100%;
-  }
-.addButton {
-  position:absolute;
-  right:0;
-  top:0;
+img {
+  height: 300px;
 }
-.mat-elevation-z8 {    
-  overflow-x: auto;
- }
- td {
-  max-width: 200px;
+
+.product-description {
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+}
+mat-card-title {
+  text-decoration: solid;
+  font-weight: bold;
+  text-align: center;
 }

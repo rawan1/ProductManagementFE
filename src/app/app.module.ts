@@ -11,13 +11,14 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { MatCardModule } from '@angular/material/card';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component'
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
+import { ImgUrlPipe } from './pipes/img-url.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
     ProductListComponent,
     ProductDetailsComponent,
     ImageCarouselComponent,
-    EditProductComponent
+    EditProductComponent,
+    ImgUrlPipe
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,8 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
     MatButtonModule,
     MatCarouselModule,
     MatSnackBarModule,
+    MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
